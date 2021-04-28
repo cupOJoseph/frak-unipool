@@ -16,11 +16,22 @@ TruffleConfig.networks.xdai = {
    provider: function() {
        return new HDWalletProvider(
            process.env.MNEMONIC,
-           "https://dai.poa.network"
+           "https://dai.poa.network" // replace with infura link for mainnet
        )
    },
    network_id: 100,
    gas: 2000000
+}
+
+TruffleConfig.networks.mainnet = {
+   provider: function() {
+       return new HDWalletProvider(
+           process.env.MNEMONIC,
+           process.env.infura, // replace with infura link for mainnet
+       )
+   },
+   network_id: 1,
+   gas: 5000000
 }
 
 TruffleConfig.networks.rinkeby.skipDryRun = true;
