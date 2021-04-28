@@ -1,8 +1,8 @@
-# Honey Unipool 
+# FRAK Unipool LP mining
 
-#### HNY Token: https://blockscout.com/poa/xdai/address/0x71850b7E9Ee3f13Ab46d67167341E4bDc905Eef9/
+#### FRAK Token: TBD - to be deployed
 
-#### HNY Uniswap Exchange: https://info.honeyswap.org/pair/0x4505b262dc053998c10685dc5f9098af8ae5c8ad
+#### FRAK Uniswap Exchange: TBD
 
 ### Run tests
 
@@ -16,7 +16,7 @@ $ npm install
 $ npm run test
 ```
 
-### Deploy to Xdai
+### Deploy to a network
 
 1) Install all dependencies if not already installed:
 ```
@@ -28,7 +28,7 @@ $ npm install
 3) Deploy to xDai. Set your private key mnemonic in the `MNEMONIC` environment variable.
 
 ```
-$ npx truffle deploy --network xdai
+$ npx truffle deploy --network mainnet
 ```
 
 ### Create a reward (will be spread across 30 days)
